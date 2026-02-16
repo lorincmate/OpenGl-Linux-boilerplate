@@ -1,0 +1,45 @@
+# .gitignore for OpenGLFun
+# Ignore build artifacts, generated files, and editor/OS junk
+
+# Premake / Ninja build outputs
+/build/
+build.ninja
+*.ninja
+
+# Compiler output
+/bin/
+/obj/
+*.o
+*.obj
+
+# compile_commands
+compile_commands.json
+/build/compile_commands.json
+
+# Binaries
+*.exe
+*.out
+*.app
+*.so
+*.dylib
+*.dll
+
+# Logs, temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+
+# IDE / editor
+.vscode/*.history
+*.code-workspace
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tags / caches
+tags
+.cache/
