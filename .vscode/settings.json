@@ -1,4 +1,14 @@
 {
-  "clangd.arguments": ["--compile-commands-dir=build"],
-  "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json"
+  "clangd.path": "clangd",
+  "clangd.checkUpdates": true,
+  "clangd.arguments": [
+    "--compile-commands-dir=build",
+    "--clang-tidy",
+    "--clang-tidy-checks=*",
+    "--completion-style=detailed",
+    "--header-insertion=never",
+    "--background-index"
+  ],
+  "editor.semanticHighlighting.enabled": true,
+  "clangd.fallbackFlags": ["-std=c++17"]
 }
