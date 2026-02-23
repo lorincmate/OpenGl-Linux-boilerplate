@@ -15,7 +15,9 @@ project "HelloWorld"
     location "build"
     targetdir "build/bin/%{cfg.buildcfg}"
     objdir "build/obj/%{prj.name}/%{cfg.buildcfg}"
-    
+    includedirs { "glad/include" }
+    defines { "GLAD_STATIC" }
+    files { "glad/src/glad.c" }  -- Include glad source files
     files { "src/**.hpp", "src/**.cpp" }  -- ** is more flexible
     
     -- GLFW detection
